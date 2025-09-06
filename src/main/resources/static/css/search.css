@@ -1,0 +1,113 @@
+/* ===============================
+   🔍 Search Section Styling
+================================ */
+.searchSection {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    align-items: center;
+}
+
+.searchSection form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    max-width: 600px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Dropdown */
+.searchSection select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+.searchSection select:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+
+/* Input box */
+.searchSection input[type="text"] {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.searchSection input[type="text"]:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 5px rgba(25, 118, 210, 0.4);
+    outline: none;
+}
+
+/* Button */
+.searchSection button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #1976d2;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.searchSection button:hover {
+    background: #145ca8;
+    transform: translateY(-2px);
+}
+.searchSection button:active {
+    transform: translateY(0);
+}
+
+
+/* ========================
+   Report Page Title
+======================== */
+/* Page Title Wrapper */
+.page-title-wrapper {
+    text-align: center;    /* center title horizontally */
+    margin: 40px 0;        /* spacing above/below */
+}
+
+/* Page Title Styling */
+.page-title {
+    display: inline-block;   /* shrink underline to text width */
+    font-size: 40px;
+    font-weight: 800;
+    color: #2c3e50;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;    /* space for underline */
+}
+
+/* Decorative Underline Effect */
+.page-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80%;             /* adjust underline length */
+    height: 5px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #1976d2, #1abc9c);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Optional subtle shadow */
+.page-title strong {
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
