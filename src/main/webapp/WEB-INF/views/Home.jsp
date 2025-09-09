@@ -8,6 +8,9 @@
     <!-- Linking external CSS -->
     <link rel="stylesheet" href="<c:url value='/css/style.css'/>">
     <style>
+    	.body{    
+    		background-color:white;
+    	}
         /* Navbar styling */
         .navbar {
             background-color: #2c3e50;
@@ -87,10 +90,19 @@
         <h1>Welcome to Library</h1>
         <p>Manage your books efficiently with our Library Management System.</p>
         <h2 class="link">
-            <a href="report">Show Report
+            <a href="report">BOOKS LIST
             <img src="images/report (2).png" class="icon-small">
             </a>
-            
+        </h2>
+        <h2 class="link">
+            <a href="students_report">STUDENTS LIST
+            <img src="images/students.png" class="icon-small">
+            </a>
+        </h2>
+        <h2 class="link">
+            <a href="list">TRANSACTION
+            <img src="images/borrow.png" class="icon-small">
+            </a>
         </h2>
     </div>
 

@@ -17,8 +17,8 @@ import jakarta.persistence.Table;
 import jakarta.persistence.Version;
 
 @Entity
-@Table(name="JPA_BOOKS_TAB12")
-@SQLDelete(sql="UPDATE JPA_BOOKS_TAB12 SET status='INACTIVE' WHERE book_Id=? AND UPDATE_COUNT=?")
+@Table(name="JPA_BOOKS_Mngt")
+@SQLDelete(sql="UPDATE JPA_BOOKS_Mngt SET status='INACTIVE' WHERE book_Id=? AND UPDATE_COUNT=?")
 @SQLRestriction("status <> 'INACTIVE'")
 public class BookEntity {
 
@@ -27,11 +27,11 @@ public class BookEntity {
 		@Column(name = "book_Id")
 	    private Integer id;
 
-	    @Column(name="book_Title", length = 30, nullable = false)
+	    @Column(name="book_Title", length = 100, nullable = false)
 	    @NonNull
 	    private String title;
 
-	    @Column(name="book_AuthorName", length = 30, nullable = false)
+	    @Column(name="book_AuthorName", length = 60, nullable = false)
 	    @NonNull
 	    private String authorName;
 
@@ -43,7 +43,7 @@ public class BookEntity {
 	    @NonNull
 	    private Double price;
 
-	    @Column(name="book_Genre", length = 30, nullable = false)
+	    @Column(name="book_Genre", length = 50, nullable = false)
 	    @NonNull
 	    private String genre;
 	    

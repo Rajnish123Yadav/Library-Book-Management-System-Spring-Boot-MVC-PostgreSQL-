@@ -3,8 +3,7 @@
 ======================== */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /*background-color: #f4f6f9;*/
-    background-color:#c5d5c5;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
@@ -233,7 +232,7 @@ h1, h2, h3 {
    MESSAGES
 ======================== */
 .no-data {
-    color: blue;
+    color: yellow;
     text-align: center;
     margin-top: 40px;
 }

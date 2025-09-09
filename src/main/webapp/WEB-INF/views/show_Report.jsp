@@ -28,6 +28,9 @@
         </form>
     </div>
 	
+	
+	
+	
     <!-- Report Table -->
     <c:if test="${not empty listVO}">
         <table class="report-table">

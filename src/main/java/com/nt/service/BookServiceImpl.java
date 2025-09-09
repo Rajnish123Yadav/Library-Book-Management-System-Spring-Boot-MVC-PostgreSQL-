@@ -3,7 +3,6 @@ package com.nt.service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.BeanUtils;
@@ -85,7 +84,7 @@ public class BookServiceImpl implements IBookService {
 	@Override
 	public String deleteBook(Integer id) {
 		bookRepo.deleteById(id);
-		return id+"book with id actor is deleted successfully";
+		return id+"Book with id [ "+ id +" ] is deleted successfully";
 	}
 	
 	
