@@ -36,8 +36,8 @@ public class BookServiceImpl implements IBookService {
 		
 		entities.forEach(entity -> {
 		    BookVO vo = new BookVO();
-		    BeanUtils.copyProperties(entity, vo); // ✅ copy into vo
-		    listvo.add(vo); // ✅ add vo into list
+		    BeanUtils.copyProperties(entity, vo); // copy into vo
+		    listvo.add(vo); // add vo into list
 		});
 
 		return listvo;
@@ -158,3 +158,4 @@ public class BookServiceImpl implements IBookService {
 				.collect(Collectors.toList());	
 	}
 }
+
