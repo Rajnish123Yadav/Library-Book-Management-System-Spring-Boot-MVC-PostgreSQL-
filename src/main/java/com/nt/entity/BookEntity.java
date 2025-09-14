@@ -48,7 +48,7 @@ public class BookEntity {
 	    private String genre;
 	    
 	    @Column(name = "available")
-	    private Boolean available; // ✅ use wrapper class
+	    private Boolean available; // use wrapper class
 	    
 	    
 	    // Metadata fields
@@ -80,7 +80,7 @@ public class BookEntity {
 		// Constructor with all fields
 		public BookEntity(Integer id, String title, String authorName, String isbnNumber, Double price, String genre,
 		        LocalDateTime createdOn, LocalDateTime updatedOn, Integer updateCount, String createdBy,
-		        String updatedBy, String status, Boolean available) {  // ✅ Boolean, not boolean
+		        String updatedBy, String status, Boolean available) {  // Boolean, not boolean
 		    super();
 		    this.id = id;
 		    this.title = title;
@@ -100,7 +100,7 @@ public class BookEntity {
 		// Required args constructor
 		public BookEntity(String title, String authorName, String isbnNumber, Double price, String genre,
 		        LocalDateTime createdOn, LocalDateTime updatedOn, Integer updateCount, String createdBy,
-		        String updatedBy, String status, Boolean available) {  // ✅ Boolean
+		        String updatedBy, String status, Boolean available) {  // Boolean
 		    super();
 		    this.title = title;
 		    this.authorName = authorName;
@@ -166,7 +166,7 @@ public class BookEntity {
 			this.status = status;
 		}
 
-		public void setAvailable(Boolean available) {   // ✅ Boolean
+		public void setAvailable(Boolean available) {   // Boolean
 			this.available = available;
 		}
 		
@@ -220,7 +220,7 @@ public class BookEntity {
 			return status;
 		}
 
-		public Boolean getAvailable() {   // ✅ Boolean
+		public Boolean getAvailable() {   // Boolean
 		    return available;
 		}
 
@@ -234,3 +234,4 @@ public class BookEntity {
 		}
 
 }
+
